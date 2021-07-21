@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --cache --ext .js,.jsx src/",
     "develop": "cross-env NODE_ENV=development node src/server/server.js",
-    "start": "cross-env NODE_ENV=production node src/server/server.js",
+    "start": "npm run build && cross-env NODE_ENV=production node src/server/server.js",
     "test": "jest"
   },
   "author": "Victor Zhou",
@@ -15,6 +15,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "html-webpack-plugin": "^3.2.0",
+<<<<<<< HEAD
     "lodash": "^4.17.21",
     "shortid": "^2.2.16",
     "socket.io": "^2.4.1",
@@ -22,6 +23,16 @@
     "throttle-debounce": "^2.3.0",
     "webpack": "^4.46.0",
     "webpack-dev-middleware": "^3.7.3"
+=======
+    "lodash": "^4.17.15",
+    "shortid": "^2.2.15",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "terser-webpack-plugin": "^5.1.4",
+    "throttle-debounce": "^2.1.0",
+    "webpack": "^4.43.0",
+    "webpack-dev-middleware": "^3.7.2"
+>>>>>>> 67326ebcb5635b6825504626a73595810f0a60f1
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
